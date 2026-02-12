@@ -30,8 +30,8 @@ All embedding are stored in a FAISS index which allows similarity search between
 ### 6. Retrieval
 For a given query (e.g., Brake caliper bolt torque), the system retrieves the associated chunks from the manual.
 ### 7. LLM-Based Extraction
-Retrieved chunks are passed to an LLM:<br>
-google/flan-t5-large, 
+Retrieved chunks are passed to an LLM:
+google/flan-t5-large, <br>
 The model attempts to extract structured specifications in the format:<br>
 Component | Spec Type | Value | Unit
 ### 8. Structured Output Processing
