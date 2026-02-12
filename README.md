@@ -4,12 +4,12 @@
 The goal of this assignment is to develop a basic system capable of retrieving vehicle specifications like torque values from an automotive service manual PDF document utilizing the technique of Retrieval-Augmented Generation (RAG) and Large Language Models.
 The system deals only with texts and does not consider any diagrams that are presented in the manual.
 ### Tools & Libraries Used
-•	Python
-•	PyMuPDF (fitz)
-•	Sentence-Transformers
-•	FAISS
-•	Hugging Face Transformers
-•	LangChain Text Splitters
+•	Python<br>
+•	PyMuPDF (fitz)<br>
+•	Sentence-Transformers<br>
+•	FAISS<br>
+•	Hugging Face Transformers<br>
+•	LangChain Text Splitters<br>
 •	Pandas
 
 ## Pipeline Overview
