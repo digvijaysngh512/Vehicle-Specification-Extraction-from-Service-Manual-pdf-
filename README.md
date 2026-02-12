@@ -17,14 +17,14 @@ The complete pipeline consists of the following stages:
 The service manual pdf is parsed using PyMuPDF (fitz).
 All pages are read and combined into a single raw text corpus.
 ### 2. Text Cleaning
-Remove extra spaces, Normalize line breaks, Clean special symbols
+Remove extra spaces, Normalize line breaks, Clean special symbols.
 This improves chunking and retrieval quality.
 ### 3. Text Chunking
-RecursiveCharacterTextSplitter, Chunk size: 800, Overlap: 100
+RecursiveCharacterTextSplitter, Chunk size: 800, Overlap: 100.
 Chunking enables efficient semantic retrieval.
 ### 4. Embedding Creation
 Each chunk is converted into vector embeddings using:
-sentence-transformers/all-MiniLM-L6-v2
+sentence-transformers/all-MiniLM-L6-v2.
 These embeddings represent semantic meaning of the text.
 ### 5. Vector Database (FAISS)
 All embedding are stored in a FAISS index which allows similarity search between user queries and manual content.
@@ -52,10 +52,10 @@ ABS module screws	Torque	3	Nm
 Brake tube-to-HCU fittings	Torque	20	Nm
 
 # Design Considerations
-•	Used RAG architecture for contextual extraction
-•	Chose lightweight embedding model for speed
-•	Used open-source LLM for local execution
-•	Applied minimal post-processing to structure flattened tables
+	Used RAG architecture for contextual extraction,
+	Chose lightweight embedding model for speed,
+	Used open-source LLM for local execution,
+	Applied minimal post-processing to structure flattened tables,
 ## Limitations
 •	Torque tables in PDFs lose column structure during text extraction
 •	LLM struggles to interpret flattened numeric rows
