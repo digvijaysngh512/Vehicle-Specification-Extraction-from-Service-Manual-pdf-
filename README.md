@@ -1,1 +1,1 @@
-# Vehicle-Specification-Extraction-from-Service-Manual-pdf-
+# Vehicle Specification Extraction from Service Manual
