@@ -47,9 +47,9 @@ Brake torque specifications
 
 ## Example Output
 
-Component	Spec Type	Value	Unit
+Component	Spec Type	Value	Unit : 
 ABS module screws	Torque	3	Nm
-Brake tube-to-HCU fittings	Torque	20	Nm
+
 
 # Design Considerations
 	Used RAG architecture for contextual extraction,
@@ -57,16 +57,16 @@ Brake tube-to-HCU fittings	Torque	20	Nm
 	Used open-source LLM for local execution,
 	Applied minimal post-processing to structure flattened tables,
 ## Limitations
-•	Torque tables in PDFs lose column structure during text extraction
-•	LLM struggles to interpret flattened numeric rows
-•	Some noise specifications may appear without filtering
-•	Fluid capacities and part numbers were not fully explored
+	Torque tables in PDFs lose column structure during text extraction
+	LLM struggles to interpret flattened numeric rows
+	Some noise specifications may appear without filtering
+	Fluid capacities and part numbers were not fully explored
 ## Future Scope of improvement 
-•	Table-aware parsing
-•	Multi-spec extraction (fluids, part numbers)
-•	Better prompt engineering
-•	UI interface for query input
-•	Evaluation metrics for extraction accuracy
+	Table-aware parsing
+	Multi-spec extraction (fluids, part numbers)
+	Better prompt engineering
+	UI interface for query input
+	Evaluation metrics for extraction accuracy
 ## Conclusion
 The project successfully demonstrates a Retrieval-Augmented LLM pipeline capable of extracting structured vehicle specifications from service manual text and exporting them into usable tabular format.
 
