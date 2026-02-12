@@ -17,14 +17,10 @@ The complete pipeline consists of the following stages:
 The service manual pdf is parsed using PyMuPDF (fitz).
 All pages are read and combined into a single raw text corpus.
 ### 2. Text Cleaning
-•	\n Remove extra spaces
-•	Normalize line breaks
-•	Clean special symbols
+Remove extra spaces, Normalize line breaks, Clean special symbols
 This improves chunking and retrieval quality.
 ### 3. Text Chunking
-•	RecursiveCharacterTextSplitter
-•	Chunk size: 800
-•	Overlap: 100
+RecursiveCharacterTextSplitter, Chunk size: 800, Overlap: 100
 Chunking enables efficient semantic retrieval.
 ### 4. Embedding Creation
 Each chunk is converted into vector embeddings using:
@@ -40,11 +36,11 @@ google/flan-t5-large
 The model attempts to extract structured specifications in the format:
 Component | Spec Type | Value | Unit
 ### 8. Structured Output Processing
-Since torque tables in the PDF are flattened during extraction, light post-processing is applied to:
-•	Identify torque rows
-•	Clean component names
-•	Remove noise text
-•	Structure the output
+Since torque tables in the PDF are flattened during extraction, light post-processing is applied to: 
+	Identify torque rows,
+	Clean component names,
+  Remove noise text,
+  Structure the output,
 ### 9. CSV Export
 ## Example Query
 Brake torque specifications
