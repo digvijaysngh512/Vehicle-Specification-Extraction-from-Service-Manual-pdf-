@@ -1,4 +1,5 @@
 # Vehicle Specification Extraction from Service Manual
+## colab Code - https://colab.research.google.com/drive/1IDozX_Jf4XE8zgKshi5gaG7kIiPNt9-u?usp=sharing
 ## Objective
 The goal of this assignment is to develop a basic system capable of retrieving vehicle specifications like torque values from an automotive service manual PDF document utilizing the technique of Retrieval-Augmented Generation (RAG) and Large Language Models.
 The system deals only with texts and does not consider any diagrams that are presented in the manual.
