@@ -23,16 +23,16 @@ RecursiveCharacterTextSplitter, Chunk size: 800, Overlap: 100.
 Chunking enables efficient semantic retrieval.
 ### 4. Embedding Creation
 Each chunk is converted into vector embeddings using:
-sentence-transformers/all-MiniLM-L6-v2.
+sentence-transformers/all-MiniLM-L6-v2.<br>
 These embeddings represent semantic meaning of the text.
 ### 5. Vector Database (FAISS)
 All embedding are stored in a FAISS index which allows similarity search between user queries and manual content.
 ### 6. Retrieval
 For a given query (e.g., Brake caliper bolt torque), the system retrieves the associated chunks from the manual.
 ### 7. LLM-Based Extraction
-Retrieved chunks are passed to an LLM:
+Retrieved chunks are passed to an LLM:<br>
 google/flan-t5-large, 
-The model attempts to extract structured specifications in the format:
+The model attempts to extract structured specifications in the format:<br>
 Component | Spec Type | Value | Unit
 ### 8. Structured Output Processing
 Since torque tables in the PDF are flattened during extraction, light post-processing is applied to: 
@@ -46,7 +46,7 @@ Brake torque specifications
 
 ## Example Output
 
-Component	Spec Type	Value	Unit : 
+Component	Spec Type	Value	Unit : <br>
 ABS module screws	Torque	3	Nm
 
 
