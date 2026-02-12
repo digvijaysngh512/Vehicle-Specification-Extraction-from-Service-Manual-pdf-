@@ -35,7 +35,7 @@ google/flan-t5-large, <br>
 The model attempts to extract structured specifications in the format:<br>
 Component | Spec Type | Value | Unit
 ### 8. Structured Output Processing
-Since torque tables in the PDF are flattened during extraction, light post-processing is applied to: 
+Since torque tables in the PDF are flattened during extraction, light post-processing is applied to: <br>
 	Identify torque rows,
 	Clean component names,
   Remove noise text,
