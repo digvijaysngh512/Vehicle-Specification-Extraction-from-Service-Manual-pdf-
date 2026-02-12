@@ -17,7 +17,7 @@ The complete pipeline consists of the following stages:
 The service manual pdf is parsed using PyMuPDF (fitz).
 All pages are read and combined into a single raw text corpus.
 ### 2. Text Cleaning
-Remove extra spaces, Normalize line breaks, Clean special symbols.  This improves chunking and retrieval quality.
+Remove extra spaces, Normalize line breaks, Clean special symbols. <br> This improves chunking and retrieval quality.
 ### 3. Text Chunking
 RecursiveCharacterTextSplitter, Chunk size: 800, Overlap: 100.
 Chunking enables efficient semantic retrieval.
